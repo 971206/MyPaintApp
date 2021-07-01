@@ -13,6 +13,4 @@ protocol CoordinatorProtocol: AnyObject {
     
     func start()
     func proceedToPaint()
-
-    
 }

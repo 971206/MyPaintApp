@@ -15,9 +15,29 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3x8-M8-H3h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="auR-Oq-aZO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3x8-M8-H3h" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="6VY-9m-RV6"/>
+                            <constraint firstItem="3x8-M8-H3h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9Gj-7R-Q5j"/>
+                            <constraint firstItem="auR-Oq-aZO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LNF-A2-MGe"/>
+                            <constraint firstItem="3x8-M8-H3h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="MBs-C1-5ev"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="auR-Oq-aZO" secondAttribute="trailing" id="WJh-Pq-gzt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="auR-Oq-aZO" secondAttribute="bottom" id="a7L-MI-Wmg"/>
+                            <constraint firstItem="auR-Oq-aZO" firstAttribute="top" secondItem="3x8-M8-H3h" secondAttribute="bottom" id="dmD-iA-kmf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="auR-Oq-aZO" id="CtF-tG-MEE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

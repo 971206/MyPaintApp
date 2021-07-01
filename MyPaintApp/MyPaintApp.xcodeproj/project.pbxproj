@@ -26,6 +26,7 @@
 		FA2E298E268DBD0F00E31740 /* PaintViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2E298D268DBD0F00E31740 /* PaintViewController.storyboard */; };
 		FA2E2991268DBD5900E31740 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E2990268DBD5900E31740 /* CanvasView.swift */; };
 		FA2E2994268DC21E00E31740 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E2993268DC21E00E31740 /* BaseViewController.swift */; };
+		FA2E2996268DEFD000E31740 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E2995268DEFD000E31740 /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		FA2E298D268DBD0F00E31740 /* PaintViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaintViewController.storyboard; sourceTree = "<group>"; };
 		FA2E2990268DBD5900E31740 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		FA2E2993268DC21E00E31740 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FA2E2995268DEFD000E31740 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				FA2E2975268DB5A900E31740 /* UICollectionViewCell + Extension.swift */,
 				FA2E2977268DB5BA00E31740 /* UICollectionView + Extension.swift */,
+				FA2E2995268DEFD000E31740 /* UIView + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				FA2E2994268DC21E00E31740 /* BaseViewController.swift in Sources */,
 				FA2E296F268DB3C600E31740 /* AppCoordinator.swift in Sources */,
 				FA2E296D268DB3B400E31740 /* CoordinatorProtocol.swift in Sources */,
+				FA2E2996268DEFD000E31740 /* UIView + Extension.swift in Sources */,
 				FA2E2958268DB24400E31740 /* SceneDelegate.swift in Sources */,
 				FA2E298C268DBD0500E31740 /* PaintViewController.swift in Sources */,
 				FA2E2984268DBB0900E31740 /* GalleryCell.swift in Sources */,
