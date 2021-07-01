@@ -13,6 +13,10 @@
 		FA2E295D268DB24400E31740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2E295B268DB24400E31740 /* Main.storyboard */; };
 		FA2E295F268DB24500E31740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2E295E268DB24500E31740 /* Assets.xcassets */; };
 		FA2E2962268DB24500E31740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2E2960268DB24500E31740 /* LaunchScreen.storyboard */; };
+		FA2E296D268DB3B400E31740 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E296C268DB3B400E31740 /* CoordinatorProtocol.swift */; };
+		FA2E296F268DB3C600E31740 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E296E268DB3C600E31740 /* AppCoordinator.swift */; };
+		FA2E2971268DB3D300E31740 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E2970268DB3D300E31740 /* CoordinatorDelegate.swift */; };
+		FA2E2973268DB3E000E31740 /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E2972268DB3E000E31740 /* StoryBoarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FA2E295E268DB24500E31740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2E2961268DB24500E31740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2E2963268DB24500E31740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2E296C268DB3B400E31740 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		FA2E296E268DB3C600E31740 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FA2E2970268DB3D300E31740 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
+		FA2E2972268DB3E000E31740 /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,8 @@
 		FA2E2954268DB24400E31740 /* MyPaintApp */ = {
 			isa = PBXGroup;
 			children = (
-				FA2E2955268DB24400E31740 /* AppDelegate.swift */,
-				FA2E2957268DB24400E31740 /* SceneDelegate.swift */,
+				FA2E296A268DB38D00E31740 /* Infrastructure */,
+				FA2E2969268DB37100E31740 /* App */,
 				FA2E2959268DB24400E31740 /* ViewController.swift */,
 				FA2E295B268DB24400E31740 /* Main.storyboard */,
 				FA2E295E268DB24500E31740 /* Assets.xcassets */,
@@ -65,6 +73,34 @@
 				FA2E2963268DB24500E31740 /* Info.plist */,
 			);
 			path = MyPaintApp;
+			sourceTree = "<group>";
+		};
+		FA2E2969268DB37100E31740 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA2E2955268DB24400E31740 /* AppDelegate.swift */,
+				FA2E2957268DB24400E31740 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA2E296A268DB38D00E31740 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				FA2E296B268DB3A200E31740 /* Coordinator */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		FA2E296B268DB3A200E31740 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA2E296C268DB3B400E31740 /* CoordinatorProtocol.swift */,
+				FA2E296E268DB3C600E31740 /* AppCoordinator.swift */,
+				FA2E2970268DB3D300E31740 /* CoordinatorDelegate.swift */,
+				FA2E2972268DB3E000E31740 /* StoryBoarded.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +175,11 @@
 			files = (
 				FA2E295A268DB24400E31740 /* ViewController.swift in Sources */,
 				FA2E2956268DB24400E31740 /* AppDelegate.swift in Sources */,
+				FA2E2973268DB3E000E31740 /* StoryBoarded.swift in Sources */,
+				FA2E296F268DB3C600E31740 /* AppCoordinator.swift in Sources */,
+				FA2E296D268DB3B400E31740 /* CoordinatorProtocol.swift in Sources */,
 				FA2E2958268DB24400E31740 /* SceneDelegate.swift in Sources */,
+				FA2E2971268DB3D300E31740 /* CoordinatorDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
