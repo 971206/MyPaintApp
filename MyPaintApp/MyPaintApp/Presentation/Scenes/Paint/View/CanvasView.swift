@@ -51,5 +51,9 @@ class CanvasView: UIView {
        _ = lines.popLast()
         setNeedsDisplay()
     }
+    func clear() {
+        lines.removeAll()
+        setNeedsDisplay()
+    }
     
 }

@@ -27,8 +27,14 @@ class PaintViewController: BaseViewController {
         let button = UIButton(type: .system)
         button.setTitle("Clear", for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 17)
+        button.addTarget(self, action: #selector(handleClear), for: .touchUpInside)
+
         return button
     }()
+    
+    @objc func handleClear() {
+        canvasView.clear()
+    }
     
     override func loadView() {
         super.loadView()
