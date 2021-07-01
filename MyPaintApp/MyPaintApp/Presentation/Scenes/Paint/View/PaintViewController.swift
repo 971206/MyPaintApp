@@ -138,6 +138,7 @@ class PaintViewController: BaseViewController {
         super.viewDidLoad()
         canvasView.backgroundColor = .white
         setUpStackViewLayout()
+        print(documentsDirectoryURL!)
 //        self.navigationController?.navigationBar.isHidden = true
         
     }
@@ -160,7 +161,6 @@ class PaintViewController: BaseViewController {
             viewSquare.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             viewSquare.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             viewSquare.heightAnchor.constraint(equalToConstant: 250),
-            
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),

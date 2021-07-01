@@ -24,6 +24,12 @@ class GalleryViewController: BaseViewController {
         read()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        dataSource.paintingsList.removeAll()
+        read()
+    }
+    
     @IBAction func onCreateNew(_ sender: Any) {
         coordinator?.proceedToPaint()
     }

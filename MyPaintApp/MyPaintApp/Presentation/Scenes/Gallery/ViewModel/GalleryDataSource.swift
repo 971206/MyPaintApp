@@ -19,7 +19,6 @@ class GalleryDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
         self.collectionView.delegate = self
         self.collectionView.collectionViewLayout = UICollectionViewLayout()
         let layout = UICollectionViewFlowLayout()
-//        layout.itemSize = CGSize(width: collectionView.frame.width, height: collectionView.frame.height - 250)
         layout.scrollDirection = .vertical
         collectionView.collectionViewLayout = layout
         
@@ -43,10 +42,10 @@ class GalleryDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
             )
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-            return 3
+            return 5
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            return 3
+            return 5
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
             return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
